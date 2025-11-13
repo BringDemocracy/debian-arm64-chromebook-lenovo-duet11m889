@@ -1,0 +1,45 @@
+# Ignore les résultats de collecte d'infos (peuvent contenir données sensibles)
+output/run_*/
+
+# Mais garde le README
+!output/README.md
+
+# Fichiers temporaires
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backups
+*.bak
+*.backup
+
+# Logs
+*.log
+
+# Fichiers de build potentiels
+*.o
+*.so
+*.a
+
+# Environnements virtuels Python
+venv/
+env/
+.venv/
+
+# Node modules
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Experiments - fichiers binaires et sensibles
+experiments/*/firmware-backup.bin
+experiments/*/logs/*.log
+experiments/*/*.bin
+
+# Crostini - fichiers de config personnels peuvent contenir des données sensibles
+crostini-setup/config/.ssh/
+crostini-setup/config/*.key
